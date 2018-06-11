@@ -14,27 +14,6 @@ rabbitmq 2.2
 idea 2018.1
 ```
 #各模块说明  
-| 模块名        | 端口号    |  服务名  |  作用  |
-| ---  | -----  | ---- | ------ |
-| ekserver|1111|/|项目注册中心|
-| ekclient| 2222|   service-hi    |服务提供者|
-| ekclient2|2223|   service-hi    |服务提供者|
-| routfeign|2224|   service-feign|服务消费者 ekserver 获取service-hi并消费（自带负载均衡） 熔断测试| 
-| hystrixdasboard        | 2225     |  hystrix-dasboard    | 熔断后台查看|
-| zuul       | 2226      |   service-zuul    |api 网关  调用对外接口服务 service-feign|
-| configserver|2227| config-server      |   配置中心服务提供者  连接git resp 获取配置  |
-| configserver        | 2228      | config-server      |   配置中心服务消费者    |
-| ekconfigserver        | 2229      |   ekconfig-center    |  配置服务提供中心 总线刷新位置|
-| ekconfigclient        | 2230      |   ekconfig-client    |  配置服务消费者|
-| ekconfigclient2        | 2231      |   ekconfig-client    |  配置服务消费者|
-| sleuth       | 2232      |   trace-1    |  消息追踪1 调用 trace2|
-| sleuth2       | 2233      |   trace-2    |  消息追踪2|
-| zipkin       | 2234      |   trace-2    |  zipkin 消息追踪控制台 支持trace1 tarce2 调用的查看|
-| zipkinstreamserver       | 2235      |   zipkinstream-server    |  trace1 tarce2 rabbitmq 整合|
-| stream       |  |  | 消息驱动微服务展示|
-
-
-#各模块说明  
 | First Header  | Second Header |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
