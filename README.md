@@ -35,7 +35,7 @@ idea 2018.1
 
 
 #各模块说明  
-|| First Header  | Second Header |
+| First Header  | Second Header |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
