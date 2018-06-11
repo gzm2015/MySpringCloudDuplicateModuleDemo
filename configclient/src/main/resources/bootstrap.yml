@@ -4,6 +4,8 @@ spring:
       uri: http://localhost:2227/
       profile: test
       label: test
+  #https://github.com/gzm2015/MySpringCloudConfigTestRep/tree/test 这里用的配置文件
+  #config-server-test.properties  和 所以和前面的 服务提供者 configserver 模块 application name 重名了
   application:
     name: config-server
 
