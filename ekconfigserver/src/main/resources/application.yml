@@ -1,0 +1,20 @@
+server:
+  port: 2229
+#配置1111 为 注册中心
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+spring:
+  application:
+    name: ekconfig-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/gzm2015/MySpringCloudConfigTestRep.git
+management:
+  security:
+    enabled: false
+
+

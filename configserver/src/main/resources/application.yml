@@ -1,0 +1,11 @@
+server:
+  port: 2227
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/gzm2015/MySpringCloudConfigTestRep.git
+  application:
+    name: config-server
+

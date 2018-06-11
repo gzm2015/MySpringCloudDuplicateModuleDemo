@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:2227/
+      profile: test
+      label: test
+  application:
+    name: config-server
+

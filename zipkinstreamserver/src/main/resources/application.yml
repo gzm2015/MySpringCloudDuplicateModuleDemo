@@ -1,0 +1,5 @@
+server:
+  port: 2235
+spring:
+  application:
+    name: zipkinstream-server

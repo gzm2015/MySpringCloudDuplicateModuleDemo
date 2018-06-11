@@ -1,0 +1,20 @@
+#配置1111 为 注册中心
+#过程中遇到一个异常：“java.lang.IllegalStateException: No instances found of configserver”，需要把此前config client的eureka配置和config server配置都写在bootstrap.yml文件中，而不是application.yml
+#management.security.enabled=false 才可以使用 否则 401错误
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+spring:
+  cloud:
+    config:
+      profile: test
+      label: test
+      discovery:
+        enabled: true
+        service-id: ekconfig-center
+  application:
+    name: ekconfig-client
+management:
+  security:
+    enabled: false

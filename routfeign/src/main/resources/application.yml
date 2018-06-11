@@ -1,0 +1,14 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+server:
+  port: 2224
+spring:
+  application:
+    name: service-feign
+
+#一定要开启否则熔断机制不会生效 idea 编辑的时候可能会警告不用管他
+feign:
+  hystrix:
+    enabled: true

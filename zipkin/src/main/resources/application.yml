@@ -1,0 +1,5 @@
+server:
+  port: 2234
+spring:
+  application:
+    name: zipkin-server
